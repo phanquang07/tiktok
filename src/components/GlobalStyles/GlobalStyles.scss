@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
+$color-primary: rgba(22, 24, 35, 1);
+$color-secondary: rgba(254, 44, 85, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-gray: rgba(22, 24, 35, 0.34);
+$color-border: rgba(22, 24, 35, 0.12);
+$color-bg-item: rgba(22, 24, 35, 0.03);
+$width-container: 1150px;
+$height-header: 60px;
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Assistant', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+	color: $color-primary;
+}
+
+.container {
+	max-width: $width-container;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+label {
+	margin-bottom: 0;
+}
+
+input,
+select,
+textarea,
+button,
+[tabIndex] {
+	outline: transparent;
+	border: transparent;
+}
+
+li {
+	list-style: none;
+}
+
+a[href] {
+	display: block;
+	text-decoration: none;
+	color: $color-primary;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	.tippy-box {
+		font-size: 1.6rem;
+		font-weight: 600;
+		line-height: 2.2rem;
+		border-radius: 8px;
+		background: rgba(84, 84, 84, 0.92);
+	}
+	.tippy-content {
+		padding: 8px 9px;
+	}
+	.tippy-arrow {
+		color: rgba(84, 84, 84, 0.92);
+	}
+}

@@ -1,0 +1,124 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
+.header {
+	height: $height-header;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.inner {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	max-width: 118px;
+	width: 100%;
+}
+.search {
+	display: flex;
+	display: none;
+	justify-content: space-between;
+	max-width: 361px;
+	width: 100%;
+	height: 46px;
+	border: 1.5px solid transparent;
+	border-radius: 92px;
+	background: rgba(22, 24, 35, 0.06);
+	position: relative;
+	&:focus-within {
+		border-color: rgba(22, 24, 35, 0.2);
+	}
+}
+.form-search {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: $color-gray;
+	padding-right: 16px;
+	input {
+		width: 100%;
+		font-size: 1.6rem;
+		padding: 12px 16px;
+		caret-color: $color-secondary;
+		background: transparent;
+	}
+}
+.clear-btn {
+	color: $color-gray;
+	font-size: 1.4rem;
+	background: transparent;
+}
+.loading {
+	font-size: 1.4rem;
+	display: none;
+}
+.search-btn {
+	font-size: 1.8rem;
+	min-width: 52px;
+	color: $color-gray;
+	background: rgba(22, 24, 35, 0.03);
+	cursor: pointer;
+	border-top-right-radius: 92px;
+	border-bottom-right-radius: 92px;
+	&:hover {
+		background: rgba(22, 24, 35, 0.06);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 28px;
+		top: 9px;
+		right: 52px;
+		background: rgba(0, 0, 0, 0.12);
+	}
+}
+.search-result {
+	width: 361px;
+}
+.search-title {
+	height: 30px;
+	padding: 5px 12px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	color: rgba(22, 24, 35, 0.5);
+}
+.actions {
+	display: flex;
+	max-height: 36px;
+	align-items: center;
+	.name {
+		margin-left: 8px;
+	}
+}
+.user-avatar {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 24px;
+	cursor: pointer;
+	img {
+		object-fit: cover;
+	}
+}
+// More option
+.more-option {
+	font-size: 2rem;
+	min-height: 36px;
+	margin-left: 16px;
+	cursor: pointer;
+	background: transparent;
+	svg {
+		width: 20px;
+		height: 20px;
+		padding: 0 4px;
+	}
+}
+.action-btn {
+	background: transparent;
+	font-size: 2.2rem;
+	margin-left: 16px;
+	cursor: pointer;
+}
