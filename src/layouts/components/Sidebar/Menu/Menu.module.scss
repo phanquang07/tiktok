@@ -1,0 +1,21 @@
+@import '../../../../components/GlobalStyles/GlobalStyles.scss';
+.menu-link {
+	display: flex;
+	align-items: center;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 8px;
+	border-radius: 4px;
+	-webkit-transition: background-color ease-in-out 200ms;
+	transition: background-color ease-in-out 200ms;
+	color: $color-primary;
+	&:hover {
+		background: $color-bg-item;
+	}
+}
+.active {
+	color: $color-secondary;
+}
+.menu-title {
+	margin-left: 8px;
+}

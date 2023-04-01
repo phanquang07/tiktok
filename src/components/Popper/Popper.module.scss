@@ -1,11 +1,13 @@
 .account {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	max-height: min(-156px + 100vh, 734px);
 	margin-top: 8px;
+	border-radius: 8px;
+	padding: 8px 0;
+	overflow: hidden;
+	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
-	border-radius: 8px;
-	padding-top: 8px;
-	box-sizing: border-box;
-	max-height: min(-156px + 100vh, 734px);
-	overflow-y: auto;
 }

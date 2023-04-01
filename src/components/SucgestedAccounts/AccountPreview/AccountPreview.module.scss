@@ -1,0 +1,59 @@
+@import '../../../components/GlobalStyles/GlobalStyles.scss';
+
+.account-preview {
+	width: 320px;
+	padding: 20px;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.avatar {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.body {
+	margin-top: 12px;
+}
+.account-username {
+	font-family: ProximaNova, sans-serif;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	font-weight: 700;
+	margin-top: -2px;
+	max-width: 260px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: $color-primary;
+	.icon-check {
+		margin-left: 4px;
+		color: $color-tick;
+	}
+}
+.account-name {
+	color: $color-primary;
+	font-size: 1.4rem;
+	font-weight: 600;
+	line-height: 2rem;
+	max-width: 260px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.statistics {
+	margin-top: 8px;
+}
+.label {
+	margin-left: 6px;
+}
+.value {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+.value ~ .value {
+	margin-left: 20px;
+}

@@ -1,9 +1,9 @@
 @import '../../GlobalStyles/GlobalStyles.scss';
 // Menu
-.list {
-	max-width: 224px;
-	width: 100%;
-	.item {
+.menu-list {
+	width: 224px;
+	.menu-item {
+		display: block;
 		margin-left: 0;
 		padding: 9px 16px;
 		width: 100%;
@@ -16,15 +16,17 @@
 		}
 	}
 	.separate {
-		padding: 12px 16px;
 		border-top: 1px solid $color-border;
 	}
 }
-
+.menu-body {
+	overflow-y: auto;
+}
 // Header
 .header {
 	position: relative;
 	height: 50px;
+	flex-shrink: 0;
 }
 .btn-back {
 	width: 50px;

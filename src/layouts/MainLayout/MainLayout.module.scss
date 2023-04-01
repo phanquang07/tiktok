@@ -1,0 +1,16 @@
+@import '../../components/GlobalStyles/GlobalStyles.scss';
+
+.container {
+	margin: 0 auto;
+	max-width: $width-container;
+	width: 100%;
+	display: flex;
+}
+
+.content {
+	width: 100%;
+}
+
+.main {
+	padding-top: $height-header;
+}

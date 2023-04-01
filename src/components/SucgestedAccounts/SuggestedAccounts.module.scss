@@ -1,0 +1,82 @@
+@import '../../components/GlobalStyles/GlobalStyles.scss';
+
+.suggested {
+	padding: 16px 0;
+	border-top: solid 1px $color-border;
+}
+.suggested-label {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 600;
+	color: $color-tertiary;
+	padding: 0 8px;
+}
+.suggested-list {
+	margin-top: 8px;
+}
+.account-item {
+	height: 48px;
+	padding: 8px;
+	border-radius: 4px;
+	transition: background-color 200ms ease-in-out 0s;
+	&:hover {
+		background: $color-bg-item;
+	}
+}
+.account-link {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.account-img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	overflow: hidden;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.account-info {
+	margin-left: 12px;
+	width: 100%;
+	height: 100%;
+}
+.account-username {
+	font-family: SofiaPro, sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	font-weight: 700;
+	margin-top: -2px;
+	max-width: 260px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: $color-primary;
+	.icon-check {
+		margin-left: 4px;
+		color: $color-tick;
+	}
+}
+.account-name {
+	color: $color-tertiary;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	max-width: 260px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.more-accounts-btn {
+	padding: 0px 8px;
+	margin-top: 8px;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	span {
+		font-family: ProximaNova, sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 20px;
+		color: $color-secondary;
+	}
+}

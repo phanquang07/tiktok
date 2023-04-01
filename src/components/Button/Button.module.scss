@@ -2,10 +2,13 @@
 
 // Button
 .button {
+	font-family: $font-proximaNova;
 	font-size: 1.6rem;
 	font-weight: 700;
 	min-width: 100px;
-	padding: 8px 16px;
+	min-height: 36px;
+	line-height: 22px;
+	padding: 6px 34px;
 	border-radius: 4px;
 	cursor: pointer;
 	border: 1px solid transparent;
@@ -20,14 +23,13 @@
 	}
 }
 .rounded {
-	color: rgba(22, 24, 35, 0.75);
+	color: $color-tertiary;
 	border-color: $color-border;
 	border-radius: 20px;
 }
 .primary {
 	color: $color-white;
 	background: $color-secondary;
-	border-color: transparent;
 	&:hover {
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
 			#fe2c55;
